@@ -1,1 +1,1 @@
-**typescript-package-template**
+**nit**

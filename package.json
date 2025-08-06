@@ -1,13 +1,13 @@
 {
-  "name": "typescript-package-template",
+  "name": "nit",
   "version": "0.0.1",
   "description": "A template package for typesript packages",
   "keywords": [
     "typescript"
   ],
-  "homepage": "https://github.com/ntatoud/typescript-package-template",
+  "homepage": "https://github.com/ntatoud/nit",
   "bugs": {
-    "url": "https://github.com/ntatoud/typescript-package-template/issues"
+    "url": "https://github.com/ntatoud/nit/issues"
   },
   "engines": {
     "node": ">=24.5.0"
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ntatoud/typescript-package-template.git"
+    "url": "git+https://github.com/ntatoud/nit.git"
   },
   "main": "dist/index.js",
   "scripts": {
