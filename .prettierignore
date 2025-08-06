@@ -1,0 +1,14 @@
+.cache
+.db
+.history
+output
+node_modules
+package.json
+package-lock.json
+yarn.lock
+public
+*.md
+*.mdx
+.env*
+pnpm-lock.yaml
+*.gen.ts

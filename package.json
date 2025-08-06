@@ -1,0 +1,50 @@
+{
+  "name": "typescript-package-template",
+  "version": "0.0.1",
+  "description": "A template package for typesript packages",
+  "keywords": [
+    "typescript"
+  ],
+  "homepage": "https://github.com/ntatoud/typescript-package-template",
+  "bugs": {
+    "url": "https://github.com/ntatoud/typescript-package-template/issues"
+  },
+  "engines": {
+    "node": ">=24.5.0"
+  },
+  "author": "Noé Tatoud <noe.tatoud@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntatoud/typescript-package-template.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "pretty": "prettier -w .",
+    "lint:ts": "tsc --noEmit",
+    "lint:oxlint": "oxlint ./src --fix",
+    "lint": "pnpm lint:ts && pnpm lint:oxlint",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports & pnpm run test",
+    "test": "vitest run",
+    "dev": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci",
+    "prepare": "lefthook"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.2",
+    "@changesets/cli": "2.29.5",
+    "@ianvs/prettier-plugin-sort-imports": "4.5.1",
+    "lefthook": "1.12.2",
+    "oxlint": "1.9.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2",
+    "vitest": "3.2.4"
+  }
+}

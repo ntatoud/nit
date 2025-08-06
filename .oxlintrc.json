@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "import",
+    "oxc",
+    "node",
+    "regex",
+    "vitest",
+    "typescript",
+    "unicorn"
+  ],
+
+  "env": {
+    "browser": true
+  },
+  "categories": {
+    "correctness": "error",
+    "perf": "warn"
+  },
+  "settings": {},
+  "rules": {
+    "extensions": "off",
+    "explicit-module-boundary-types": "off",
+    "explicit-function-return-type": "off"
+  }
+}
