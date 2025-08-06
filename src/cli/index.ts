@@ -34,6 +34,10 @@ const MainCommand = Command.make('nit').pipe(
 
         yield* applyCommitMessage(generatedCommitMessage);
       })
+    ).pipe(
+      Command.withDescription(
+        'Enhanced commit with message generated automatically from your git diff.'
+      )
     ),
   ])
 );

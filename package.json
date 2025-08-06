@@ -18,6 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/ntatoud/nit.git"
   },
+  "bin": {
+    "nit": "dist/index.js"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup",
