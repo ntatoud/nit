@@ -20,7 +20,6 @@ const MainCommand = Command.make('nit').pipe(
       'commit',
       {},
       Effect.fn(function* () {
-        yield* Effect.log('test');
         const generatedCommitMessage = yield* generateCommitMessageFromDiff();
 
         yield* Effect.logInfo(generatedCommitMessage);
