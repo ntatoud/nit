@@ -15,15 +15,7 @@ Your entire output MUST follow this structure precisely.
 
 \`\`\`
 <type>[optional scope]: <description>
-
-[optional body]
-
-[optional footer(s)]
 \`\`\`
-
-### 1. Header (Mandatory)
-
-The header is a single line: \`<type>[optional scope]: <description>\`
 
 *   **Type:** MUST be one of the following lowercase strings:
     *   **feat**: A new feature for the user.
@@ -48,13 +40,6 @@ The header is a single line: \`<type>[optional scope]: <description>\`
     *   MUST use the imperative, present tense (e.g., "add," "change," "fix," not "added," "changed," "fixed"). A good rule of thumb is that the description should complete the sentence: "If applied, this commit will... <description>".
     *   MUST begin with a lowercase letter.
     *   MUST NOT end with a period.
-
-### 2. Body (Optional)
-
-*   MUST be separated from the header by exactly one blank line.
-*   Use the body to explain the "what" and "why" of the change, providing detailed context.
-*   Wrap lines at 72 characters for readability.
-*   You MAY use bullet points (\`-\` or \`*\`) for lists.
 
 ## Constraints
 - The tone must be professional and direct.
