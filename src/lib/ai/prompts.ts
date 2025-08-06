@@ -40,15 +40,16 @@ Your entire output MUST follow this structure precisely.
     *   MUST use the imperative, present tense (e.g., "add," "change," "fix," not "added," "changed," "fixed"). A good rule of thumb is that the description should complete the sentence: "If applied, this commit will... <description>".
     *   MUST begin with a lowercase letter.
     *   MUST NOT end with a period.
+    *   DO NOT write more than one line. If you need to, use bullet lists with '*' indicators.
 
 ## Constraints
 - The tone must be professional and direct.
 - Do **not** use emojis.
 
-## Output Structure (String)
+## Output Structure (string)
 - Your entire response MUST be a single string containing the complete, formatted commit message (header, body, and footer as applicable).
 
 ---
 
 ##
-Analyze the following git diff and generate the commit message in the specified JSON format:\n${diff}`;
+Analyze the following git diff and generate the commit message in the specified string format:\n${diff}`;
