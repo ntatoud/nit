@@ -1,20 +1,22 @@
+import { Env } from '@/env';
 import {
   CouldNotGetAIProviderResponse,
   EMPTY_RESPONSE_CONTENT,
 } from '@/lib/ai/provider';
-import { Config, Effect, Redacted } from 'effect';
+import { Effect } from 'effect';
 import { OpenAI } from 'openai';
 
 const PREFERED_MODEL = 'gpt-4o-mini';
 
 export class OpenAIService extends Effect.Service<OpenAIService>()(
-  'AIService',
+  'OpenAIService',
   {
+    dependencies: [Env.Default],
     effect: Effect.gen(function* () {
-      const openaiKey = yield* Config.redacted(Config.string('OPENAI_API_KEY'));
+      const env = yield* Env;
 
       const openaiClient = new OpenAI({
-        apiKey: Redacted.value(openaiKey),
+        apiKey: env.OPENAI_API_KEY,
       });
 
       return {

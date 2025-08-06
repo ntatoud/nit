@@ -13,6 +13,7 @@ export const EMPTY_RESPONSE_CONTENT: Error = {
   name: 'empty',
   message: 'The received response is empty',
 };
+
 export class AIProvider extends Context.Tag('MyRandomService')<
   AIProvider,
   {

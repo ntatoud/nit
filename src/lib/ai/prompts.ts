@@ -56,14 +56,6 @@ The header is a single line: \`<type>[optional scope]: <description>\`
 *   Wrap lines at 72 characters for readability.
 *   You MAY use bullet points (\`-\` or \`*\`) for lists.
 
-### 3. Footer (Optional)
-
-*   MUST be separated from the body by exactly one blank line.
-*   **Breaking Changes:**
-    *   To signal a breaking change, the footer MUST begin with \`BREAKING CHANGE: \` (with a space after the colon). Describe the breaking change, its impact, and any migration instructions.
-    *   Alternatively, or additionally, a \`!\` can be appended to the type/scope in the header (e.g., \`feat(api)!:\`) to draw attention to a breaking change.
-*   **Issue References:** IF There is an explicit issue reference, reference issues using keywords like \`Fixes: #123\` or \`Closes: JIRA-456\`.
-
 ## Constraints
 - The tone must be professional and direct.
 - Do **not** use emojis.
