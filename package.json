@@ -20,7 +20,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "pretty": "prettier -w .",
     "lint:ts": "tsc --noEmit",
     "lint:oxlint": "oxlint ./src --fix",
@@ -29,6 +29,7 @@
     "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports & pnpm run test",
     "test": "vitest run",
     "dev": "vitest",
+    "nit": "tsx ./src/cli/index.ts",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci",
     "prepare": "lefthook"
@@ -46,5 +47,16 @@
     "prettier": "3.6.2",
     "typescript": "5.9.2",
     "vitest": "3.2.4"
+  },
+  "dependencies": {
+    "@effect/cli": "0.69.0",
+    "@effect/platform": "0.90.0",
+    "@effect/platform-node": "0.94.1",
+    "@types/node": "24.2.0",
+    "dotenv": "17.2.1",
+    "effect": "3.17.6",
+    "openai": "5.12.0",
+    "tsup": "8.5.0",
+    "tsx": "4.20.3"
   }
 }

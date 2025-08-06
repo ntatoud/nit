@@ -16,16 +16,16 @@
     "noImplicitOverride": true,
 
     /* If transpiling with TypeScript: */
-    "module": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true,
 
-    /* AND if you're building for a library: */
-    "declaration": true,
-
-    /* AND if you're building for a library in a monorepo: */
-    "declarationMap": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }
